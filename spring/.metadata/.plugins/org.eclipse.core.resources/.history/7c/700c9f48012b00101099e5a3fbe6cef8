@@ -1,0 +1,36 @@
+package com.example.Persistence;
+
+import static org.junit.Assert.fail;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import org.junit.Test;
+
+public class JDBCTest {
+    static { 
+        try { 
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            System.out.println("success1");
+        } catch(Exception e) {
+        	System.out.println("success22");
+            e.printStackTrace(); 
+        } 
+    } 
+    
+    @Test 
+    public void testConnection() { 
+        try(Connection con = DriverManager.getConnection( 
+                "jdbc:mysql://localhost:3306/flutter_spring_db?serverTimezone=Asia/Seoul&characterEncoding=UTF-8", 
+                "root", 
+                "dbs52431*")){
+        	System.out.println("success");
+            System.out.println(con); 
+        } catch (Exception e) { 
+            fail(e.getMessage()); 
+            System.out.println("fail");
+            System.out.println(e);
+        } 
+    
+    }  
+}

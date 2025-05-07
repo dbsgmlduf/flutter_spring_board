@@ -1,0 +1,56 @@
+# 환경 변수 파일
+.env
+*.env
+
+# IDE 관련
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+
+# 빌드 결과물
+/target/
+/build/
+/out/
+*.class
+*.jar
+*.war
+*.ear
+
+# 로그 파일
+*.log
+logs/
+
+# Maven 관련
+.mvn/
+mvnw
+mvnw.cmd
+
+# Gradle 관련
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+
+# 운영체제 관련
+.DS_Store
+Thumbs.db
+
+# 임시 파일
+*.tmp
+*.swp
+*~.nib
+
+# 서버 관련
+/Servers/
+/Servers/*
+
+# Spring 프로젝트 특화 규칙
+/target/
+/build/
+*.class
+.settings/
+.project
+.classpath
+

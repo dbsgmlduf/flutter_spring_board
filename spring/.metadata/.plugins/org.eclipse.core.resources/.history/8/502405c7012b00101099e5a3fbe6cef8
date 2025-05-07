@@ -1,0 +1,14 @@
+# 서버 설정
+SERVER_PORT=8080
+SERVER_CONTEXT_PATH=/FlutterSpringPractice
+
+# 데이터베이스 설정
+DB_HOST=localhost
+DB_PORT=3306
+DB_NAME=flutter_spring_db
+DB_USERNAME=root
+DB_PASSWORD=dbs52431*
+
+
+# 로깅 설정
+LOGGING_LEVEL=INFO

@@ -1,0 +1,16 @@
+# 환경 변수 파일
+.env
+*.env
+
+
+# 서버 관련
+/Servers/
+/Servers/*
+
+# Spring 프로젝트 특화 규칙
+/target/
+/build/
+*.class
+.settings/
+.project
+.classpath
